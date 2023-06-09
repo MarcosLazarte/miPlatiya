@@ -1,0 +1,47 @@
+.teclado{
+    position: absolute;
+    left: -100%;
+    bottom: 0px;
+    width: 100%;
+    background-color: blueviolet;
+    
+}
+.pantallaNumeros{
+    width: 80%;
+    height: 50vh;
+    background-color: yellow;
+}
+.botonNumeros{
+    width: 30%;
+    height: 20%;
+}
+.mover{
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    background-color: blueviolet;
+}
+.botonNumeros{
+    cursor: pointer;
+    margin: 1%;
+    width: 30%;
+    height: 60px;
+    border-radius: 10px;
+}
+.subir{
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    background-color: blueviolet;
+    z-index: 1;
+}
+
+.enter{
+    cursor: pointer;;
+}
+
+.sobre:hover{
+    background-color: darksalmon;
+}

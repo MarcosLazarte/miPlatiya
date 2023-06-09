@@ -1,9 +1,9 @@
-import HelloWorld from "./components/HelloWorld";
+import InicioSesion from "./pages/inicioSesion/InicioSesion";
 
 function App() {
   return (
-    <div className="App">
-      <HelloWorld/>
+    <div>
+      <InicioSesion/>
     </div>
   );
 }

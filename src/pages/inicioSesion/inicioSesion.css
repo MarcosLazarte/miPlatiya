@@ -1,0 +1,11 @@
+.contenedorGastos{
+    display: flex;
+    flex-direction: column;
+}
+.gastos{
+    margin: 5px 5px 0 0;
+    background-color: yellowgreen;
+    width: 40%;
+    border-radius: 10px;
+    padding-left: 3px;
+}
