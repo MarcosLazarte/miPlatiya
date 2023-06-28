@@ -13,6 +13,7 @@ function App() {
       <Routes>
         {/*Public Pages */}
           <Route path="/" element={<Home/>} />
+          <Route path="/miPlatiya" element={<Home/>} />
           <Route path="/authentication" element={<Authentication/>} />
           <Route path="*" element={<Error/>} />
         
