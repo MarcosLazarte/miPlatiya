@@ -7,7 +7,7 @@ const TecladoIngresarGastos = (prop) => {
     const [nombreGasto, setNombreGasto] = useState('')
 
     const cargarNum = (numTeclado) => {
-        if(numTeclado == ','){
+        if(numTeclado === ','){
             if(!costeGasto.includes(',')){
                 setCosteGasto([...costeGasto, numTeclado]);
             } else {
@@ -20,7 +20,7 @@ const TecladoIngresarGastos = (prop) => {
     const eliminarNum = () => {
         setCosteGasto(costeGasto.slice(0, -1))
     }
-
+    
     useEffect(() => {
         const timer = setInterval(() => {
           setFecha(new Date());
@@ -31,6 +31,7 @@ const TecladoIngresarGastos = (prop) => {
       }, []);
 
       const fechaGasto = fecha.toISOString().slice(0,10);
+      const time = fecha.toLocaleTimeString('en', { hour: 'numeric', hour12: true, minute: 'numeric', second: 'numeric' });
 
   return (
     <>
@@ -45,6 +46,7 @@ const TecladoIngresarGastos = (prop) => {
         <p>{costeGasto}</p>
         <section className='pantallaNumeros'>
             <p>{fechaGasto}</p>
+            <p>{time}</p>
             <button onClick={() => cargarNum(1)} className='botonNumeros sobre'>1</button>
             <button onClick={() => cargarNum(2)} className='botonNumeros sobre'>2</button>
             <button onClick={() => cargarNum(3)} className='botonNumeros sobre'>3</button>

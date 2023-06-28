@@ -9,3 +9,7 @@
 
     overflow-x: hidden;
 }
+.authentication_input{
+    background-color: burlywood;
+    border: 1px solid black;
+}

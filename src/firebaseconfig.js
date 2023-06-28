@@ -1,7 +1,9 @@
 // Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
+import firebase from 'firebase/compat/app'
+import 'firebase/compat/firestore'
 import 'firebase/compat/auth'
+
+import { createContext, useContext, useEffect, useState } from 'react';
 
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
@@ -19,8 +21,26 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
-const auth = app.auth();
-const store = app.firestore();
+const fire = firebase.initializeApp(firebaseConfig);
+const auth = fire.auth();
+const store = fire.firestore();
+
+export const AuthContext = createContext();
+
+export const AuthContextProvider = props => {
+  const [user, setUser] = useState()
+  const [error, setError] = useState()
+
+  useEffect(() => {
+    const unsubscribe = fire.onAuthStateChanged(fire.auth(), setUser, setError)
+    return () => unsubscribe()
+  })
+
+  return <AuthContext.Provider value = {{}} {...props} />
+}
+
+export const useAuthState = () => {
+  const auth = useContext(AuthContext)
+  return {...auth, isAuthenticated: auth.user != null}
+}
 export { auth, store }
