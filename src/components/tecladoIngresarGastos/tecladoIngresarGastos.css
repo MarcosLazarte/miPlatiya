@@ -7,9 +7,9 @@
     
 }
 .pantallaNumeros{
-    width: 80%;
-    height: 35vh;
-    background-color: yellow;
+    width: 100%;
+    height: 45vh;
+    background-color: #313131;
 }
 .botonNumeros{
     width: 30%;
@@ -21,6 +21,7 @@
     bottom: 0px;
     width: 100%;
     background-color: blueviolet;
+
 }
 .botonNumeros{
     cursor: pointer;
@@ -34,14 +35,37 @@
     left: 0px;
     bottom: 0px;
     width: 100%;
-    background-color: blueviolet;
+    background-color: #313131;
+    color: #E4E4E4E4;
     z-index: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
-
+.teclado_nombre{
+    background-color: transparent;
+    color: #E4E4E4;
+    font-size: 20px;
+    border-radius: 50px;
+    width: 40%;
+    height: 5vh;
+    padding-left: 5px;
+}
+.teclado_gasto{
+    color: #E4E4E4;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+}
 .enter{
-    cursor: pointer;;
-}
+    cursor: pointer;
+    height: 40px;
+    width: 120px;
+    border-radius: 50px;
+    background-color: #00a8e8;
+    color: #E4E4E4;
 
+}
 .sobre:hover{
     background-color: darksalmon;
 }

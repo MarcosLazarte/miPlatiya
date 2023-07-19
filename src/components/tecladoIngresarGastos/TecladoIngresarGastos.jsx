@@ -39,12 +39,12 @@ const TecladoIngresarGastos = (prop) => {
     <section className={prop.mover}>
         <input
             onChange={(e) => {setNombreGasto(e.target.value)}}
-            className='form-control mb-3'
+            className='teclado_nombre'
             type="text"
-            placeholder='Introduce el nombre'
+            placeholder='Ingrese su gasto'
             value={nombreGasto}
         />
-        <p>{costeGasto}</p>
+        <p className='teclado_gasto'>{costeGasto}<span> ARS</span></p>
         <section className='pantallaNumeros'>
             <p>{fechaGasto}</p>
             <p>{time}</p>
@@ -60,8 +60,8 @@ const TecladoIngresarGastos = (prop) => {
             <button onClick={() => cargarNum(',')} className='botonNumeros sobre'>,</button>
             <button onClick={() => cargarNum(0)} className='botonNumeros sobre'>0</button>
             <button onClick={() => eliminarNum()} className='botonNumeros sobre'>-</button>
+            <button onClick={() => prop.agregarGasto(nombreGasto, fechaGasto, costeGasto, esGasto)} className='enter sobre'>✔ Ingresar</button>
         </section>
-        <button onClick={() => prop.agregarGasto(nombreGasto, fechaGasto, costeGasto, esGasto)} className='enter sobre'>Enter</button>
     </section>
     </>
   )
