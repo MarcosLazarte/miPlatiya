@@ -19,16 +19,11 @@ const Contenido = () => {
     }
     getGastos()
     setTimeout(() => setMensaje('No hay usuarios en tu agenda'), 5000)
-  },[toggle2])
+  },[gastos])
 
   function handleClick(){ 
     if(toggle === 0) setToggle(1)
     else setToggle(0)
-  }
-
-  function togglear(){ 
-    if(toggle === 0) setToggle2(1)
-    else setToggle2(0)
   }
 /*
   function agregarGasto(nombre, fecha, coste){
@@ -56,7 +51,6 @@ const Contenido = () => {
         };
         await docs.update(updatedData);
         alert("Se agrego correctamente")
-        togglear();
       } else {
         const updatedData = {
           ...dataExistente,
@@ -64,7 +58,6 @@ const Contenido = () => {
         };
         await userDocRef.update(updatedData);
         alert("Se agrego correctamente")
-        togglear();
       }
       const newGastos = docs.data().gastos;
       setGastos(newGastos);

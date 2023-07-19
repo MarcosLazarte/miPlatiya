@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import userLogOut from '../auth/userLogOut';
 import { projectAuth } from '../firebase/config';
 import Navegador from '../components/Navegador';
+import BotonAgregarGastos from '../components/botonAgregarGastos/BotonAgregarGastos';
 
 const Dashboard = () => {
   const navigate = useNavigate();
@@ -21,7 +22,18 @@ const Dashboard = () => {
   return (
     <>
     <Navegador/>
-    <h1>Bienvenide al dashboard!</h1>
+    <BotonAgregarGastos/>
+    <h1>Hola</h1>
+    <section>
+      <div>
+        <p>Ingresos</p>
+        <p>Numero</p>
+      </div>
+      <div>
+        <p>Gastos</p>
+        <p>Numero</p>
+      </div>
+    </section>
     <button onClick={handleLogOut}>Log Out</button>
     </>
   )

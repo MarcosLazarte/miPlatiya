@@ -4,7 +4,8 @@ import './tecladoIngresarGastos.css'
 const TecladoIngresarGastos = (prop) => {
     const [fecha, setFecha] = useState(new Date());
     const [costeGasto, setCosteGasto] = useState([]);
-    const [nombreGasto, setNombreGasto] = useState('')
+    const [nombreGasto, setNombreGasto] = useState('');
+    const [esGasto, setEsGasto] = useState(true)
 
     const cargarNum = (numTeclado) => {
         if(numTeclado === ','){
@@ -60,7 +61,7 @@ const TecladoIngresarGastos = (prop) => {
             <button onClick={() => cargarNum(0)} className='botonNumeros sobre'>0</button>
             <button onClick={() => eliminarNum()} className='botonNumeros sobre'>-</button>
         </section>
-        <button onClick={() => prop.agregarGasto(nombreGasto, fechaGasto, costeGasto)} className='enter sobre'>Enter</button>
+        <button onClick={() => prop.agregarGasto(nombreGasto, fechaGasto, costeGasto, esGasto)} className='enter sobre'>Enter</button>
     </section>
     </>
   )

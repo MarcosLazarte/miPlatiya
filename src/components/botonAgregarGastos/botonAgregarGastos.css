@@ -7,5 +7,9 @@
     bottom: 5px;
     cursor: pointer;
 
+    font-size: 35px;
+    background: linear-gradient(rgb(122, 97, 215), white);
+    color: white;
+
     z-index: 2;
 }
