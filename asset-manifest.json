@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/miPlatiya/static/css/main.1888d12e.css",
-    "main.js": "/miPlatiya/static/js/main.830c58cf.js",
+    "main.css": "/miPlatiya/static/css/main.65baf1f7.css",
+    "main.js": "/miPlatiya/static/js/main.5109905c.js",
     "index.html": "/miPlatiya/index.html",
-    "main.1888d12e.css.map": "/miPlatiya/static/css/main.1888d12e.css.map",
-    "main.830c58cf.js.map": "/miPlatiya/static/js/main.830c58cf.js.map"
+    "main.65baf1f7.css.map": "/miPlatiya/static/css/main.65baf1f7.css.map",
+    "main.5109905c.js.map": "/miPlatiya/static/js/main.5109905c.js.map"
   },
   "entrypoints": [
-    "static/css/main.1888d12e.css",
-    "static/js/main.830c58cf.js"
+    "static/css/main.65baf1f7.css",
+    "static/js/main.5109905c.js"
   ]
 }
