@@ -1,0 +1,49 @@
+@keyframes aparecerNav {
+    from{
+        right: -100%;
+    }
+    to{
+        right: 0;
+    }
+}
+@keyframes ocultarNav {
+    from{
+        right: 0;
+    }
+    to{
+        right: -100%;
+    }
+}
+.mostrar{
+    width: 50%;
+    height: 50vh;
+
+    position: absolute;
+    background-color: aqua;
+
+    animation-name: aparecerNav;
+    animation-duration: 1s;
+
+    right: 0;
+}
+.ocultar{
+    width: 50%;
+    height: 50vh;
+
+    position: absolute;
+    background-color: violet;
+
+    animation-name: ocultarNav;
+    animation-duration: 1s;
+
+    right: -100%;
+}
+.inicio{
+    width: 50%;
+    height: 50vh;
+
+    position: absolute;
+    background-color: violet;
+    
+    right: -100%;
+}

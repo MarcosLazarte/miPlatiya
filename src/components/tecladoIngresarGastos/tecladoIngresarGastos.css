@@ -8,8 +8,8 @@
 }
 .pantallaNumeros{
     width: 100%;
-    height: 45vh;
-    background-color: #313131;
+    height: 80vh;
+    background-color: #111113;
 }
 .botonNumeros{
     width: 30%;
@@ -25,10 +25,10 @@
 }
 .botonNumeros{
     cursor: pointer;
-    margin: 1%;
-    width: 30%;
-    height: 60px;
-    border-radius: 10px;
+    margin: 2%;
+    width: 70px;
+    height: 70px;
+    border-radius: 500px;
 }
 .subir{
     position: absolute;
@@ -60,12 +60,36 @@
 .enter{
     cursor: pointer;
     height: 40px;
-    width: 120px;
+    width: 150px;
     border-radius: 50px;
     background-color: #00a8e8;
     color: #E4E4E4;
 
+    font-size: 25px;
+
 }
-.sobre:hover{
-    background-color: darksalmon;
+.pantallaNumeros_ordenadores{
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+}
+.sobre{
+    background-color: #111113;
+    color: #E4E4E4E4;
+    border: 1px #313131 solid;
+
+    font-size: 45px;
+}
+.sobre:focus{
+    animation-name: pulsacion;
+    animation-duration: 0.65s;
+}
+@keyframes pulsacion {
+    from {
+        background-color: #313131;
+    }
+    to {
+        background-color: #111113;
+    }
 }

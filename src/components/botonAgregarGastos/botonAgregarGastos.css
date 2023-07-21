@@ -8,7 +8,7 @@
     cursor: pointer;
 
     font-size: 35px;
-    background: linear-gradient(rgb(122, 97, 215), white);
+    background: linear-gradient(90deg,rgb(122, 97, 215) 0%, rgb(164, 150, 215) 65%, white 100%);
     color: white;
 
     z-index: 2;

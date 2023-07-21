@@ -1,0 +1,22 @@
+.botonMostrarNav_boton{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    position: fixed;
+
+    right: 5%;
+    top: 5px;
+    cursor: pointer;
+
+    font-size: 35px;
+    background-color: #313131;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    font-size: 30px;
+
+    z-index: 2;
+}
